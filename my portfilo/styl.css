@@ -1,0 +1,875 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+*   
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ outline: none;
+ border: none;
+ text-decoration: none;
+ text-transform: capitalize;
+ transition: all.2s linear;
+
+} 
+.html{
+  
+  font-size:62.5%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top: 6rem;
+font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 1000px) {
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  margin: 0;
+}
+}
+
+
+a {
+  color: #ffb727;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7b560d;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+@media (min-width: 767px) {
+#header {
+  z-index: 997;
+  transition: all 0.5s;
+  height: 50px;
+  background: rgba(25, 28, 31, 0.8);
+}
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  height: 60px;
+  background: rgba(25, 28, 31, 0.8);
+}
+
+@media (min-width: 768px) {
+.navbar {
+  padding: 0;
+  background-color: #563d1d;
+  position: sticky;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+}
+  @media (min-width: 768px) {
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+}
+@media (min-width: 768px) {
+.navbar a {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin: 7px;
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200px;
+    letter-spacing: 0px;
+    color: rgb(80, 53, 11);
+    margin-right: 21px;;
+}
+}
+@media (min-width: 768px) {
+.navbar li {
+  position: relative;
+  
+}
+}
+@media (min-width: 768px) {
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 10px;
+    margin: 7px;
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200px;
+    letter-spacing: 0px;
+    color: rgb(242, 239, 236);
+    margin-right: 21px;   
+}
+}
+@media (min-width: 600px) {
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+}
+@media (min-width: 600px) {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: rgb(153, 107, 43);
+}
+}
+@media (min-width: 600px) {
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 60px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(239, 201, 84);
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+}
+
+
+
+
+/*--------------------------------------------------------------
+# PROFIL
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@media (min-width: 600px) {
+.profil .h1{
+  margin-left: 60%;
+  font-family: "Open Sans", sans-serif;
+}
+}
+@media (min-width: 600px) {
+.container{
+  width: 80%;
+  padding: 65px 10%;
+  
+}
+}
+@media (min-width: 600px) {
+.information ul li{
+margin-left: 10%
+}
+}
+
+/*--------------------------------------------------------------
+# FORMATION ET EXPERIENCE
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@media (min-width: 600px) {
+* {
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+ 
+}
+}
+
+
+@media (min-width: 579px) {
+#formation{
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+}
+}
+@media (min-width: 579px) {
+.container{
+  width: 80%;
+  padding: 35px 10%;
+}
+}
+@media (min-width: 600px) {
+main .row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+}
+.col header.title{
+  font-family: helvetica;
+  color: rgb(237, 231, 231); 
+}
+.col .contents{
+  padding: 0px 30px;
+  border-left: 2px solid #bababa;
+}
+.col .contents .box{
+  position: relative;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  background-color: #563d1d;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+.col .contents .box:hover{
+  box-shadow: 0px 3px 20px 0px #ccc;
+  border: 1px solid transparent; 
+}
+
+@media (min-width: 600px) {
+.col .contents .box::before{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 60%;
+  right: calc(100% + 25px);
+  top: 0;
+  background-color: rgb(246, 241, 236);
+  border: 2px solid rgb(99, 53, 25);
+}
+}
+.box h4{
+  position: relative;
+  color: rgb(249, 246, 246);
+}
+.box h3{
+  font-size: 19px;
+  padding: 10px 0px 6px;
+  font-family: helvetica;
+  color: rgb(244, 241, 239);
+}
+.box p{
+  line-height: 1.2;
+  color: rgb(159, 115, 48);
+  font-size: 20px; 
+
+}
+
+/*--------------------------------------------------------------
+# competence
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@media (min-width: 400px) {
+* {
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+}
+}
+@media (min-width: 400px) {
+body {
+  background: rgb(255, 254, 253);
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+}
+
+.h1{
+  font-family: "Open Sans", sans-serif;
+}
+@media (min-width: 100px) {
+.progresWeper {
+  width: 500px;
+  margin: 50px auto;
+  color: #edebe8;
+  padding: 46px;
+  border: 5px solid #f0ede9;
+}
+}
+@media (min-width: 600px) {
+.progresWeper>h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #eae7e7;
+}
+}
+
+.progresWeper li  h1{
+  margin: 20px 0px;
+  color: #fdf9f9;
+}
+
+span.bar {
+  background: #ffffff;
+  display: block;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.html1>span {
+  background: #6c3e05;
+  height: 20px;
+  float: left;
+  border-radius: 40px;
+}
+
+.Css2>span {
+  background: #edeae4;
+  height: 20px;
+  float: left;
+  border-radius: 10px;
+}
+
+.Java3>span {
+  background: #242423;
+  height: 20px;
+  float: left;
+  border-radius: 10px;
+}
+
+.Jqury4>span {
+  background: #5f3d0e;
+  height: 20px;
+  float: left;
+  border-radius: 10px;
+}
+
+.Javascrept5>span {
+  background: #171818;
+  height: 20px;
+  float: left;
+  border-radius: 10px;
+}
+
+.Bostrap6>span {
+  background: #89520f;
+  height: 20px;
+  float: left;
+  border-radius: 10px;
+}
+
+.html {
+  width: 90%;
+  animation: html 2s;
+}
+
+.Css {
+  width: 50%;
+  animation: Css 2s;
+}
+
+.Java {
+  width: 10%;
+  animation: Java 2s;
+}
+
+.Jqury {
+  width: 5%;
+  animation: Jqury 2s;
+}
+
+.Javascrept {
+  width: 10%;
+  animation: Javascrept 2s;
+}
+
+.Bostrap {
+  width: 40%;
+  animation: Bostrap 2s;
+}
+
+@keyframes html {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 90%;
+  }
+}
+
+@keyframes Css {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 75%;
+  }
+}
+
+@keyframes Java {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 70%;
+  }
+}
+
+@keyframes Jqury {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 50%;
+  }
+}
+
+@keyframes Javascrept {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 90%;
+  }
+}
+
+@keyframes Bostrap {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 80%;
+  }
+}
+
+/*--------------------------------------------------------------
+# mes qualite
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
+
+@media (min-width: 600px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+}
+@media (min-width: 600px) {
+.cards {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: -10px;
+}
+}
+.cards h2.header {
+    font-size: 50px;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    margin: 30px;
+    padding: 60px;
+    border: 5px solid rgb(242, 235, 235);
+    width: 100%;
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+
+
+.content>* {
+    flex: 1 1 100%;
+    
+}
+
+.content:hover {
+    color: rgb(252, 250, 248);
+}
+
+.content:hover a {
+    border-color: rgb(255, 252, 247);
+    background: rgb(147, 85, 11);
+    
+}
+
+.content-1:hover {
+    border-color: #f0eeeb;
+    background: #79420a;
+  
+}
+
+.content-1:hover a {
+    color: #f8f3ee;
+}
+
+.content-2:hover {
+    border-color: #f8f5f6;
+    background: #804e08;
+}
+
+.content-2:hover a {
+    color: #f1efef;
+}
+
+.content-3:hover {
+    border-color: #faf7f7;
+    background: #774a05;
+    
+}
+
+.content-3:hover a {
+    color: #e4e0e0;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin: 16px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content p {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    color: #f3ecec;
+}
+
+.content a {
+    margin: 40px 0;
+    background: rgb(251, 247, 247);
+    color: rgb(121, 67, 13);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 1px 0;
+    border-radius: 25px;
+    transition: .3s ease;
+}
+
+.content a:hover {
+    border-radius: 4px;
+}
+
+@media (max-width: 1000px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*--------------------------------------------------------------
+#reference
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
+#section-references{
+  background-color: rgb(121, 67, 13);
+  color: rgb(121, 67, 13);
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
+
+p{
+  font-family: "Open Sans", sans-serif;
+
+}
+#section-references .r-heading{
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-size: 4vw;
+  padding: 60px;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+}
+.r-wrapp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.r-wrapp .r-container{
+  position: relative;
+  width: 350px;
+  color: rgb(121, 67, 13);
+  background: #fff;
+  margin: 40px 60px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+.r-wrapp .r-container .pro{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15%;
+  width: 100%;
+  display: block;
+}
+.r-wrapp .r-container .pro .Boximg{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border: 8px solid rgb(121, 67, 13);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.r-wrapp .r-container .pro .Boximg img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+.r-wrapp .r-container .pro .Boximg:hover img{
+  filter: saturate(140%);
+  transform: scale(0.95);
+}
+.r-wrapp .r-container .pro h2{
+  padding: 20px;
+  text-transform: capitalize;
+  color: rgb(121, 67, 13);
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 15px;
+}
+.r-wrapp .r-container p{
+  margin: 30px;
+  color: rgb(121, 67, 13);
+  padding: 0 8px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+.r-wrapp .r-container .left{
+  font-size: 30px;
+  display: block;
+  text-align: left;
+  color: rgb(121, 67, 13);
+}
+.r-wrapp .r-container .right{
+  font-size: 30px;
+  display: block;
+  text-align: right;
+  color: rgb(121, 67, 13);
+}
+.r-wrapp .r-container .r-Social{
+  width: 100%;
+}
+.r-wrapp .r-container .r-Social i{
+  font-size: 1.2em;
+  color: #fff;
+  padding: 8px;
+  background: rgb(121, 67, 13);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px #07332cc9;
+}
+.r-wrapp .r-container .r-Social:hover i{
+  background: #fff;
+  transition: 0.3s;
+}
+
+/*--------------------------------------------------------------
+# centre d'intret
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
+@media (min-width: 600px) {
+body {
+  background:rgb(246, 245, 245);
+  font-family: "Open Sans", sans-serif; 
+}
+}
+h1 {
+  margin:3em auto 0;
+  color:#53380a;
+  text-align:center;
+}
+@media (min-width: 600px) {
+table {
+  width:800px;
+  table-layout:relative;
+  margin:1em auto;
+  border-spacing:0;
+  background-color:#53380a;
+  background:
+  url(http://lorempixel.com/200/300/sports/2) no-repeat  0% 50%,
+  url(http://lorempixel.com/300/200/sports/6) no-repeat  100% 50%,
+  linear-gradient( 180deg,#704310 0%, #53380a 90%) no-repeat 0 50%,
+  linear-gradient(180deg,#53380a 20%,#53380a90) no-repeat 100% 0;
+  background-size:30% auto, 70% auto, 30% 100%, 70% 100%;
+  border-radius:1em;
+  overflow:hidden;
+  box-shadow:0 0 5px #FDEFCD;
+}
+}
+table, td {
+  border:4px solid#f0efed(253, 239, 205,0.5);
+  color:#53380a;
+  text-shadow:1px 1px  white;
+  font-size:18px;
+}
+td:first-child {
+  width:29%;
+  text-align:center;
+  font-size:150%;
+  font-weight:bold;
+  color:white;
+  text-shadow:0 0 1px black;
+}
+p {
+  padding:0 5px;
+}
+table ~ table { 
+  width:70%;
+}
+table ~ table ~ table {
+  background:
+  linear-gradient( 180deg,#53380a 0% ,#53380a 90%) no-repeat 0 50%,
+  linear-gradient(180deg,#53380a 20%,#53380a 90%) no-repeat 100% 0;
+  background-size: 30% 100%, 70% 100%;
+  }
+table ~ table ~ table td {
+color:white;
+text-shadow:0 0 #53380a
+}
+td {
+  opacity:0.75;
+}
+tr:hover td {
+  opacity:1;
+  box-shadow:inset 0 0  200px #53380a, 0 0 10px white;
+  color:white;
+  text-shadow:0 0 #53380a;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  body{
+  margin:0;
+  overflow-x:hidden !important;
+  box-sizing:border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  a{
+  text-decoration:none;
+  outline:none !important;
+  color:#fff;
+  }
+  
+  .border-shape {
+  background: #ffbe00 none repeat scroll 0 0;
+  color: #fff;
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: 20px auto;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 80px;
+  }
+  
+  .border-shape::before {
+  background: #ffbe00 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 80px;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 1px;
+  width: 100px;
+  }
+  
+  .border-shape::after {
+  background: #ffbe00 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  margin: 0 auto;
+  position: absolute;
+  right: 80px;
+  text-align: center;
+  top: 1px;
+  width: 100px;
+  }
+  
+  
+ .body{
+  background: #53380a;
+ }
+
+ 
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+
+body {
+  display: flex;flex-direction: column;
+  min-height: 100vh;
+  font: 1em system-ui;
+  background: #53380a;
+
+
+}
+  main {/*met le main dans un conteneur*/
+    flex: 1;background-color: #edeceb;padding: 1em; 
+    display: flex;justify-content: center;
+    display: flex;
+    text-shadow:0 0 #53380a
+    
+
+  }
+   
+    footer{
+      border: 
+      url(http://lorempixel.com/200/300/sports/2) no-repeat  0% 50%,
+      url(http://lorempixel.com/300/200/sports/6) no-repeat  100% 50%,
+      linear-gradient( 180deg,#704310 0%, #53380a 90%) no-repeat 0 50%,
+      linear-gradient(180deg,#53380a 20%,#53380a90) no-repeat 100% 0;
+      background-size:30% auto, 70% auto, 30% 100%, 70% 100%;
+      overflow:hidden;
+      box-shadow:0 0 5px #79440b;
+      display: flex;justify-content: center;
+      padding: 5px;
+      background-color: rgb(251, 249, 246);color: #603e07;
+      background-size: 30% 100%, 70% 100%;
+      /*fixe lélément au footer*/
+      bottom: 0;
+      z-index: 1000;
+      
+    }
